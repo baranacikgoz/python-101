@@ -38,14 +38,17 @@ myList = ['Asus', 'Nvidia', 'GigaByte']
 myList.append('AMD')
 myList #output: ['Asus', 'Nvidia', 'GigaByte', 'AMD']
 
-##index(), copy(), sort(), reverse(), clear()
-
 ## remove() method is used to remove a particular item from the list.
 # list.remove(item)
-
 myList = ['Asus', 'Nvidia', 'GigaByte', 'Lenovo', 'AMD']
 myList.remove('Lenovo')
 myList #output: ['Asus', 'Nvidia', 'GigaByte', 'AMD']
+
+## pop() method is used to remove item by its index
+# list.pop(index)
+myList = ['Asus', 'Nvidia', 'GigaByte', 'Lenovo', 'AMD']
+myList.pop(3)
+myList #output: ['Asus', 'Nvidia', 'GigaByte', 'AMD'] 
 
 ## extend() method is used to merge two list items and store the merged items in the first list.
 #first_list.extends(second_list)
