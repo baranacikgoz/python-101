@@ -111,11 +111,37 @@ set2 = set([1,2,3])
 set1.intersection_update(set2)
 set1 #output: {1, 3}
 
+set1 = set([1,3,5]) 
+set2 = set([1,2,3])
 
-# ****** to continue
+set2.difference_update(set1)
+set2 #output: 2
+
+set1 = set([1,3,5]) 
+set2 = set([1,2,3])
 
 
+# *************** SORGULAR
 
+## isdisJoint() #returns true if two sets don't have an intersection, and returns false if two sets has an intersection
+set1 = set([1,3,5]) 
+set2 = set([1,2,3])
+
+set1.isdisjoint(set2) #output: False (there is intersection)
+
+
+## issubset() #altkumesi mi degil mi onu verir
+s1 = set([7,8]) 
+s2 = set([6,7,8,9])
+
+s1.issubset(s2) #True -> s1 is a subset of s2
+
+
+## issuperset()
+s1 = set([7,8]) 
+s2 = set([6,7,8,9])
+
+s2.issuperset(s1) #output: True -> s2 is a superset of s1
 
 
 
